@@ -78,6 +78,14 @@ class MainScreen extends Phaser.Scene {
                     gameState.fatpoints += 10000;
                     text.destroy();
                     text = scene.add.text( 100, 40, `Fat points : ${gameState.fatpoints}`, {fill: '#000000', fontSize: '40px'});
+                    scene.time.addEvent({
+                        delay: 3000,
+                        callback: ()=>{
+                            caketext.destroy();
+                        },
+                        startAt: 0,
+                        timeScale: 1,
+                    });
                 }
             });
             gameState.gamecreated = true;
