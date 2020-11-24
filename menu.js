@@ -22,15 +22,15 @@ class MainScreen extends Phaser.Scene {
     create() {
         gameState.code = "";
         gameState.gamecreated = false;
-        one = this.add.text( 100, 100, `1`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        two = this.add.text( 200, 100, `2`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        three = this.add.text( 300, 100, `3`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        four = this.add.text( 400, 100, `4`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        five = this.add.text( 500, 100, `5`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        six = this.add.text( 600, 100, `6`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        seven = this.add.text( 700, 100, `7`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        eight = this.add.text( 800, 100, `8`, {fill: '#000000', fontSize: '60px'}).setInteractive();
-        nine = this.add.text( 900, 100, `9`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        one = this.add.text( 100, 100, `1`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        two = this.add.text( 400, 100, `2`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        three = this.add.text( 700, 100, `3`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        four = this.add.text( 100, 400, `4`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        five = this.add.text( 400, 400, `5`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        six = this.add.text( 700, 400, `6`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        seven = this.add.text( 100, 700, `7`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        eight = this.add.text( 400, 700, `8`, {fill: '#000000', fontSize: '100px'}).setInteractive();
+        nine = this.add.text( 700, 700, `9`, {fill: '#000000', fontSize: '100px'}).setInteractive();
         one.on('pointerdown', () => {
             gameState.code = gameState.code + "1";
             console.log(gameState.code);
