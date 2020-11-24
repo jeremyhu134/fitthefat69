@@ -63,13 +63,13 @@ class MainScreen extends Phaser.Scene {
                 }
                 gameState.caketalk += 1;
                 if(gameState.caketalk == 1){
-                    caketext = scene.add.text( gameState.chochcake.x - 250, gameState.chochcake.y -100, `I think that fatso wants \nto eat me...`, {fill: '#000000', fontSize: '20px'});
+                    caketext = scene.add.text( gameState.chochcake.x - 230, gameState.chochcake.y -100, `I think that fatso wants \nto eat me...`, {fill: '#000000', fontSize: '20px'});
                 }
                 else if(gameState.caketalk == 2){
-                    caketext = scene.add.text( gameState.chochcake.x - 250, gameState.chochcake.y -100, `Please don't feed me\n to him!`, {fill: '#000000', fontSize: '20px'});
+                    caketext = scene.add.text( gameState.chochcake.x - 230, gameState.chochcake.y -100, `Please don't feed me\n to him!`, {fill: '#000000', fontSize: '20px'});
                 }
                 else if(gameState.caketalk == 3){
-                    caketext = scene.add.text( gameState.chochcake.x - 250, gameState.chochcake.y -100, `NO... NOOOOO!`, {fill: '#000000', fontSize: '20px'});
+                    caketext = scene.add.text( gameState.chochcake.x - 230, gameState.chochcake.y -100, `NO... NOOOOO!`, {fill: '#000000', fontSize: '20px'});
                 }
                 else if(gameState.caketalk == 4){
                     gameState.chochcake.destroy();
@@ -78,7 +78,7 @@ class MainScreen extends Phaser.Scene {
                     text.destroy();
                     text = scene.add.text( 100, 40, `Fat points : ${gameState.fatpoints}`, {fill: '#000000', fontSize: '40px'});
                     scene.time.addEvent({
-                        delay: 3000,
+                        delay: 2000,
                         callback: ()=>{
                             caketext.destroy();
                         },
