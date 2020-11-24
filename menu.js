@@ -22,7 +22,6 @@ class MainScreen extends Phaser.Scene {
         this.load.audio('iamfat','images/iamfat.mp3');
     }
     create() {
-        codetext = nine = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         gameState.createGame = function(scene){
             gameState.fatpoints = 0;
             text = scene.add.text( 100, 40, `Fat points : ${gameState.fatpoints}`, {fill: '#000000', fontSize: '40px'});
