@@ -37,46 +37,73 @@ class MainScreen extends Phaser.Scene {
             gameState.code = gameState.code + "1";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         two.on('pointerdown', () => {
             gameState.code = gameState.code + "2";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         three.on('pointerdown', () => {
             gameState.code = gameState.code + "3";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         four.on('pointerdown', () => {
             gameState.code = gameState.code + "4";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         five.on('pointerdown', () => {
             gameState.code = gameState.code + "5";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         six.on('pointerdown', () => {
             gameState.code = gameState.code + "6";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         seven.on('pointerdown', () => {
             gameState.code = gameState.code + "7";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         eight.on('pointerdown', () => {
             gameState.code = gameState.code + "8";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         nine.on('pointerdown', () => {
             gameState.code = gameState.code + "9";
             codetext.destroy();
             codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
+            if(gameState.code.length > 6){
+                gameState.code = "";
+            }
         });
         gameState.createGame = function(scene){
             gameState.fatpoints = 0;
@@ -125,6 +152,7 @@ class MainScreen extends Phaser.Scene {
             seven.destroy();
             eight.destroy();
             nine.destroy();
+            codetext.destroy();
             gameState.createGame(this);
         }
     }
