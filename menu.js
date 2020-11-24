@@ -22,15 +22,15 @@ class MainScreen extends Phaser.Scene {
     create() {
         gameState.code = "";
         gameState.gamecreated = false;
-        one = this.add.text( 100, 100, `1`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        two = this.add.text( 130, 100, `2`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        three = this.add.text( 160, 100, `3`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        four = this.add.text( 190, 100, `4`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        five = this.add.text( 220, 100, `5`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        six = this.add.text( 250, 100, `6`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        seven = this.add.text( 280, 100, `7`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        eight = this.add.text( 310, 100, `8`, {fill: '#000000', fontSize: '40px'}).setInteractive();
-        nine = this.add.text( 340, 100, `9`, {fill: '#000000', fontSize: '40px'}).setInteractive();
+        one = this.add.text( 100, 100, `1`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        two = this.add.text( 200, 100, `2`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        three = this.add.text( 300, 100, `3`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        four = this.add.text( 400, 100, `4`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        five = this.add.text( 500, 100, `5`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        six = this.add.text( 600, 100, `6`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        seven = this.add.text( 700, 100, `7`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        eight = this.add.text( 800, 100, `8`, {fill: '#000000', fontSize: '60px'}).setInteractive();
+        nine = this.add.text( 900, 100, `9`, {fill: '#000000', fontSize: '60px'}).setInteractive();
         one.on('pointerdown', () => {
             gameState.code = gameState.code + "1";
             console.log(gameState.code);
