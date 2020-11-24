@@ -9,6 +9,7 @@ var six;
 var seven;
 var eight;
 var nine;
+var codetext;
 
 
 class MainScreen extends Phaser.Scene {
@@ -21,6 +22,7 @@ class MainScreen extends Phaser.Scene {
     }
     create() {
         gameState.code = "";
+        codetext = nine = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         gameState.gamecreated = false;
         one = this.add.text( 100, 100, `1`, {fill: '#000000', fontSize: '100px'}).setInteractive();
         two = this.add.text( 400, 100, `2`, {fill: '#000000', fontSize: '100px'}).setInteractive();
@@ -33,31 +35,48 @@ class MainScreen extends Phaser.Scene {
         nine = this.add.text( 700, 700, `9`, {fill: '#000000', fontSize: '100px'}).setInteractive();
         one.on('pointerdown', () => {
             gameState.code = gameState.code + "1";
-            console.log(gameState.code);
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         two.on('pointerdown', () => {
             gameState.code = gameState.code + "2";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         three.on('pointerdown', () => {
             gameState.code = gameState.code + "3";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         four.on('pointerdown', () => {
             gameState.code = gameState.code + "4";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         five.on('pointerdown', () => {
             gameState.code = gameState.code + "5";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         six.on('pointerdown', () => {
             gameState.code = gameState.code + "6";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         seven.on('pointerdown', () => {
             gameState.code = gameState.code + "7";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         eight.on('pointerdown', () => {
             gameState.code = gameState.code + "8";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         nine.on('pointerdown', () => {
             gameState.code = gameState.code + "9";
+            codetext.destroy();
+            codetext = this.add.text( 100, 900, `Code : ${gameState.code}`, {fill: '#000000', fontSize: '100px'});
         });
         gameState.createGame = function(scene){
             gameState.fatpoints = 0;
